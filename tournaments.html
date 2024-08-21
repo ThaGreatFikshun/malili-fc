@@ -3,8 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Football Team - Tournaments</title>
+    <title>MFC - Tournaments</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main {
+            flex: 1;
+        }
+    </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
     <!-- Header -->
@@ -23,27 +33,32 @@
         </div>
     </header>
 
-    <!-- Tournaments -->
-    <section class="py-12 text-center">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-bold text-green-700">Upcoming Tournaments</h2>
-            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Tournament Info -->
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold text-green-700">Tournament Name 1</h3>
-                    <p class="mt-4 text-gray-700">Date: January 20, 2024</p>
-                    <p class="text-gray-700">Venue: Stadium A</p>
-                    <p class="text-gray-700">Opponent: Team B</p>
-                </div>
-                <!-- Repeat for other tournaments -->
+    <!-- Main Content -->
+    <main class="container mx-auto p-6">
+        <h1 class="text-4xl font-bold text-green-700 mb-6">Upcoming Tournaments</h1>
+        <div class="space-y-6">
+            <!-- Tournament 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-semibold text-green-700">Champions Cup</h2>
+                <p class="mt-2 text-gray-700">Date: October 15, 2024</p>
+                <p class="text-gray-700">Venue: National Stadium</p>
+                <p class="text-gray-700">Description: The top teams from across the country compete for the prestigious Champions Cup.</p>
             </div>
+            <!-- Tournament 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-semibold text-green-700">City League Finals</h2>
+                <p class="mt-2 text-gray-700">Date: November 3, 2024</p>
+                <p class="text-gray-700">Venue: City Sports Complex</p>
+                <p class="text-gray-700">Description: The final match to crown the city’s best MFC.</p>
+            </div>
+            <!-- Add more tournaments as needed -->
         </div>
-    </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-6 mt-20">
+    <footer class="bg-gray-900 text-white py-6 mt-auto">
         <div class="container mx-auto text-center">
-            <p>&copy; 2024 Football Team. All rights reserved.</p>
+            <p>&copy; 2024 MFC. All rights reserved.</p>
             <div class="mt-4">
                 <a href="#" class="px-3 hover:text-gray-400">Facebook</a>
                 <a href="#" class="px-3 hover:text-gray-400">Twitter</a>
